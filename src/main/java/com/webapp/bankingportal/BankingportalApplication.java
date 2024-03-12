@@ -1,6 +1,7 @@
 package com.webapp.bankingportal;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -51,7 +52,7 @@ public static void printJsonInfoToPDF() throws Exception{
 public static void createPDF(JsonNode node) throws Exception{
 
 	Document document = new Document();
-	ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+	FileOutputStream outputStream = new FileOutputStream("output.pdf");
 
 	PdfWriter.getInstance(document, outputStream);
 
