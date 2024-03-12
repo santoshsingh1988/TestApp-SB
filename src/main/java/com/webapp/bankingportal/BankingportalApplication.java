@@ -20,9 +20,9 @@ public class BankingportalApplication {
 public static void printJsonInfoToPDF(){
 
 	System.out.println("Print JSON to PDF Code.");
+	String dummyJSON = "{ \"id\": \"0001\", \"type\": \"donut\", \"name\": \"Cake\", \"image\": { \"url\": \"images//0001.jpg\", \"width\": 200, \"height\": 200 }, \"thumbnail\": { \"url\": \"images//thumbnails//0001.jpg\", \"width\": 32, \"height\": 32 } }";
 
-	
-
+System.out.println(dummyJSON);
 
 }
 
