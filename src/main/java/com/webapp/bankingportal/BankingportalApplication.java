@@ -75,8 +75,8 @@ public static void addContent(Document document, JsonNode node) throws Exception
 			addHeading(document, key);
 			addContent(document, value);
 		}else{
-			addHeading(document, key);
-			addContentLine(document, value.asText());
+			
+			addContentLine(document, key + " : " + value.asText());
 		}
 
 	}
